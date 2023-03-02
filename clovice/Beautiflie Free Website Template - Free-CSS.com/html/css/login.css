@@ -75,22 +75,6 @@
     outline: none;
 }
 
-.int_area label {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    font-size: 18px;
-    color: #222222;
-    transition: top .5s ease;
-}
-
-.int_area input:focus + label,
-.int_area input:valid + label {
-    top: -2px;
-    font-size: 13px;
-    color: #999;
-}
-
 .btn_area {
     margin-top: 30px;
 }
@@ -247,6 +231,11 @@ a,
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+
+.logo img {
+    max-width: 230px;
+    height: auto;
 }
 
 img {
