@@ -49,6 +49,7 @@ body {
     font-weight: normal;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 a {
@@ -234,6 +235,8 @@ button {
     background-color: #fef4ec;
     height: auto;
     background-size: 100%;
+    position: fixed;
+    z-index: 9999;
 }
 
 .bg-light {
