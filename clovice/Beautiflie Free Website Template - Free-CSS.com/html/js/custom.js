@@ -366,6 +366,15 @@ $(function () {
      $('#blogCarousel').carousel({
         interval: 5000
      });
+	 
+	 var scrollTop = document.querySelector(".scroll-top");
 
+	 window.addEventListener("scroll", function() {
+	   if (window.pageYOffset > 300) {
+		 scrollTop.style.display = "block";
+	   } else {
+		 scrollTop.style.display = "none";
+	  }
+	 });
 
 });
