@@ -17,11 +17,11 @@
 <!-- API(HikariCP) -->
 <!-- bean : 객체를 생성하는 태그 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/com?serverTimezone=UTC"/>
-		<property name="username" value="com"/>
-		<property name="password" value="com01"/>
-	</bean>  
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@127.0.0.1:1524:XE"/>
+		<property name="username" value="clovice"/>
+		<property name="password" value="clovice0323"/>
+	</bean>
 
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
 		<constructor-arg ref="hikariConfig" />
