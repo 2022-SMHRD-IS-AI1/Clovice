@@ -21,7 +21,7 @@
 		<property name="jdbcUrl" value="jdbc:oracle:thin:@127.0.0.1:1524:XE"/>
 		<property name="username" value="clovice"/>
 		<property name="password" value="clovice0323"/>
-	</bean>
+	</bean>  
 
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
 		<constructor-arg ref="hikariConfig" />
