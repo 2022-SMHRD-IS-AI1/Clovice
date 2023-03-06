@@ -33,43 +33,75 @@
 @import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+.member h1 {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 32px;
+}
 
-/*member sign in*/
+
 .member{
     width: 400px;
     /* border: 1px solid #000; */
     margin: auto; /*중앙 정렬*/
-    padding: 0 20px;
+    padding-top: 210px;
     margin-bottom: 20px;
     
     
 }
 
-
-
 .member .field{
     margin :5px 0; /*상하로 좀 띄워주기*/
+    
+
 }
 
 .member b{
     /* border: 1px solid #000; */
     display: block; /*수직 정렬하기 */
     margin-bottom: 5px;
+    
 }
 
 /*input 중 radio 는 width 가 100%면 안되니까 */
 .member input:not(input[type=radio]),.member select{
     border: 1px solid #dadada;
-    padding: 15px;
     width: 100%;
     margin-bottom: 5px;
+    height: 55px;
 }
 
-.member input[type=button],
-.member input[type=submit]{
-background-color: #fef4ec;
-color:#000000
+.member input[type=button]{
+    width: 100%;
+    height: 50px;
+    background: #fef4ec;
+    color: #222222;
+    font-size: 13px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+
+
 }
+.member input[type=submit]{
+    width: 100%;
+    height: 50px;
+    background: #fef4ec;
+    color: #222222;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+    
+    
+   
+    
+    
+}
+
 
 .member input:focus, .member select:focus{
     border: 1px solid #fef4ec;
@@ -90,6 +122,7 @@ color:#000000
 
 .field.tel-number div input:nth-child(1){
     flex:2;
+    
 }
 
 .field.tel-number div input:nth-child(2){
@@ -100,11 +133,22 @@ color:#000000
     border: 1px solid #dadada;
     padding: 15px 5px;
     background-color: #fff;
+    text-align :center;
+    font-size: medium;
+    word-spacing: 70px;
+    
+    
+}
+.field.gender div label{
+    margin-bottom: 0px;
+    
+    
 }
 
 .placehold-text{
     display: block; 
     position:relative;
+    height: 50px;
     /* border: 1px solid #000; */
 }
 
@@ -120,12 +164,14 @@ color:#000000
     background:url(./images/images2/icon-01.png) no-repeat center right 15px;
     background-size: 20px;
     background-color: #fff;
+    height: 55px;
 }
 
 .userpw-confirm{
     background:url(./images/images2/icon-02.png) no-repeat center right 15px;
     background-size: 20px;
     background-color: #fff;
+    height: 55px;
 }
 
 .member-footer {
@@ -170,6 +216,17 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #666666;
     font-size: 14px;
@@ -181,7 +238,6 @@ body {
     height: 100vh;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
 }
 
 a {
@@ -195,9 +251,7 @@ a {
     transition: all .3s ease-in-out;
 }
 
-h1 {
-    text-align: center;
-}
+h1,
 h2,
 h3,
 h4,
@@ -215,7 +269,6 @@ h6 {
 
 h1 {
     font-size: 24px
-
 }
 
 h2 {
@@ -296,8 +349,6 @@ a,
 .logo img {
     max-width: 230px;
     height: auto;
-    align-items: center;
-    
 }
 
 img {
@@ -979,7 +1030,6 @@ button {
     float: left;
     text-align: center;
     display: none;
-    
 }
 
 .footer_logo_1 {
