@@ -1,29 +1,30 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Form, Header
 from fastapi.responses import FileResponse
+# from fastapi.responses import HTMLResponse
+# from fastapi.staticfiles import StaticFiles
+# from fastapi.templating import Jinja2Templates
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
+from starlette.middleware.cors import CORSMiddleware
+import json
 app = FastAPI()
 
-class Model(BaseModel):
-    id : str
-    pw : str
-    name : str
-    ssn : int
-    email : str
-    phone : str
+origins = ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins = origins,
+    allow_credentials = True,
+    allow_methods = ["*"],
+    allow_headers = ["*"]
+)
 
 @app.get("/")
 def 이름():
     return "보낼 값"
 
-@app.get("/second")
-def 두번째():
-    return {"군단장" : "아브렐"}
 
-@app.get("/html")
-async def getHtml():
-    return FileResponse('Clovice/Beautiflie Free Website Template - Free-CSS.com/html/join.html')
-
-@app.post("/send")
-async def getData(data : Model):
-    print(data)
-    return '전송완료'
+@app.get("/getCoordi")
+async def getData(request : Request):
+    json_string = '{"name":"gsj", "age":21, "gender":"male"}'
+    data = json.loads(json_string)
+    return JSONResponse(content = data)
