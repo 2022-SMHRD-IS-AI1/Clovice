@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Beautiflie</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	if(${!empty msgType}){
+		$("#messageType").attr("class","modal-content panel-warning");
+		$("#myMessage").modal("show");
+	}
+});
+
+function count_check(obj){
+	var chkBox = document.getElementsByName("chk"); // name값 chk를 불러옴
+	var chkCnt = 0;	// chkCnt 변수 초기값 0으로 설정
+	for(var i=0;i<chkBox.length;i++){
+		if(chkBox[i].checked){
+			chkCnt++; //chkBox가 체크될 경우 1씩 증가
+		}
+	}
+	if(chkCnt>3){
+		alert("3개까지 체크할 수 있습니다.")
+		obj.checked=false;
+		return false;
+	}
+}
+
+</script>
+
+</head>
+<body>
+	<div class="container">
+		<jsp:include page="../common/header1.jsp"></jsp:include>
+		<div class="panel panel-default">
+			<div class="panel-heading"></div>
+			<div class="panel-body">
+				<!-- 회원가입 폼 -->
+				<form name="frm" action="${contextPath}/memRegister.do" method="post">
+				<input id="mem_id" type="hidden" name="mem_id" value="${mvo.mem_id}"/>
+					<table class="table table-bordered" style="text-align: center; border: 1px solid #dddddd">
+						<tr>
+							<td style="width: 110px; vertical-align: middle;">선호 컬러</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="1"/>빨강</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="2"/>노랑</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="3"/>초록</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="4"/>파랑</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="5"/>보라</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="6"/>네이비</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="7"/>회색</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="8"/>화이트</td>
+							<td colspan=""><input id="fav_color" name="chk" type="checkbox" onClick="count_check(this);" value="9"/>블랙</td>
+						</tr>
+						<tr>
+							<td style="width: 110px; vertical-align: middle;">선호 스타일</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>아메리칸캐주얼</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>캐주얼</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>시크</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>댄디</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>포멀</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>걸리시</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>골프</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>홈웨어</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>레트로</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>로맨틱</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>스포츠</td>
+							<td colspan=""><input id="fav_style" name="fav_style" type="checkbox"/>스트릿</td>
+						</tr>
+						<tr>
+							<td style="width: 110px; vertical-align: middle;">관심있는 태그</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+							<td colspan=""><input id="fav_tag" name="fav_tag" type="checkbox"/>?</td>
+						</tr>
+						<tr>
+							<td colspan="5" style="text-align: left;">
+								<span id="passMessage" style="color:red"></span><input type="button" class="btn btn-primary btn-sm pull-right" value="등록" onclick="goInsert()"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+
+			</div>
+			<%-- 다이얼로그창(모달) --%>
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div id="checkType" class="modal-content panel-info">
+						<div class="modal-header panel-heading">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">메세지 확인</h4>
+						</div>
+						<div class="modal-body">
+							<p id="checkMessage"></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<%-- 실패 메시지 출력 --%>
+						<!-- Modal -->
+			<div id="myMessage" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div id="messageType" class="modal-content panel-info">
+						<div class="modal-header panel-heading">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">${msgType}</h4>
+						</div>
+						<div class="modal-body">
+							<p>${msg}</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="panel-footer"></div>
+		</div>
+	</div>
+
+</body>
+</html>
