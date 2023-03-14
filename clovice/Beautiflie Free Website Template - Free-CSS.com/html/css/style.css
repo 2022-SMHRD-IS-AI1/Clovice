@@ -220,7 +220,7 @@ li {
     margin-bottom: 10px;
 }
 
-.yes > input.image_:focus {
+.yes>input.image_:focus {
     border: 1px solid #232322;
 }
 
@@ -240,14 +240,146 @@ input[type="checkbox"] {
     transition: background 0.2s;
     position: absolute;
     left: 48%;
-  }
+}
 
-  input[type="checkbox"]:checked {
+input[type="checkbox"]:checked {
     background: #666666;
     border: none;
+}
+
+/* 신상 슬라이드 */
+.slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.slides {
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.slide {
+    display: flex;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.slide a > img {
+    width: 240px;
+    height: 360px;
+    /* object-fit: cover; */
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-25%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    75% {
+      transform: translateX(-75%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 
-/*  */
+.newcodi_box {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 0px 0px;
+    margin-top: 30px;
+}
+
+.leftBtn {
+    position: relative;
+    right: 30px;
+    bottom: 185px;
+    cursor: pointer;
+}
+
+.rightBtn {
+    position: relative;
+    bottom: 185px;
+    left: 800px;
+    cursor: pointer;
+}
+
+/* 상의,하의,신발 버튼 */
+.prev_bt {
+    width: 120px;
+    position: relative;
+}
+
+.prev_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.topnext_bt {
+    width: 120px;
+    position: relative;
+    left: 960px;
+}
+
+.topnext_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.next_bt {
+    width: 120px;
+    position: relative;
+    left: 840px;
+}
+
+.next_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 끝 */
 
 a {
     color: #1f1f1f;
@@ -329,6 +461,21 @@ ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
+}
+
+
+
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul>li {
+    margin-right: 40px;
 }
 
 p {
@@ -519,11 +666,7 @@ button {
 }
 
 .login_text a {
-    color: #ffffff;
-}
-
-.login_text a:hover {
-    color: #ffffff;
+    color: #222222;
 }
 
 .navbar-light .navbar-brand {
@@ -776,7 +919,8 @@ button {
 }
 
 .about_section_main {
-    width: 100%;
+    width: 1080px;
+    height: 511.31px;
     float: left;
 }
 
