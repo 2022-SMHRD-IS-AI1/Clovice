@@ -25,6 +25,13 @@ def 이름():
 
 @app.get("/getCoordi")
 async def getData(request : Request):
-    json_string = '{"name":"gsj", "age":21, "gender":"male"}'
+    json_string = '{'
+    item_list = [111111, 111112, 111113]
+    for i in range(0, 11):
+        if i == 10:
+            json_string += f'"coordi{i}":'+'{"item01":'+f'{item_list[0]}, "item02":{item_list[1]}, "item03":{item_list[2]}'+'}}'
+        else:
+            json_string += f'"coordi{i}":'+'{"item01":'+f'{item_list[0]}, "item02":{item_list[1]}, "item03":{item_list[2]}'+'},'
+    print(json_string)
     data = json.loads(json_string)
     return JSONResponse(content = data)
