@@ -66,9 +66,8 @@
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="product_taital">Our Products</h1>
-               <p class="product_text">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation</p>
+               <h1 class="product_taital">코디맵</h1>
+               <p class="product_text">마음에 드는 코디에 하트를 눌러주세요!</p>
             </div>
          </div>
          <div class="product_section_2 layout_padding">
@@ -519,16 +518,16 @@
       // 좋아요 스크립트
       const btnLikes = document.querySelectorAll(".btn_like");
 
-        btnLikes.forEach((btnlike) => {
-            btnlike.addEventListener("click", function() {
-                if($(this).hasClass('btn_unlike')){
-                    $(this).removeClass('btn_unlike');
-                  }
-                  else{
-                    $(this).addClass('btn_unlike');
-                  }
-            });
-        });
+      btnLikes.forEach((btnlike) => {
+         btnlike.addEventListener("click", function () {
+            if ($(this).hasClass('btn_unlike')) {
+               $(this).removeClass('btn_unlike');
+            }
+            else {
+               $(this).addClass('btn_unlike');
+            }
+         });
+      });
    </script>
 </body>
 
