@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@font-face {
+    font-family: "Righteous";
+    src: url("../fonts/BalooChettan-Regular.ttf");
+    src: url("../fonts/BalooChettan-Regular.ttf");
+}
+
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 /* header section start */
 
 .header_section {
@@ -175,7 +205,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
-    font-family: "Spoqa Han Sans Neo","-apple-system","BlinkMacSystemFont","Apple SD Gothic Neo","Apple SD 산돌고딕 Neo","helvetica","Roboto","Noto Sans KR","맑은 고딕","sans-serif";
+    /* font-family: "Spoqa Han Sans Neo","-apple-system","BlinkMacSystemFont","Apple SD Gothic Neo","Apple SD 산돌고딕 Neo","helvetica","Roboto","Noto Sans KR","맑은 고딕","sans-serif"; */
     line-height: 1;
 }
 
@@ -186,6 +216,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 section {
     display: block;
 }
+
 
 body, html {
     color: #000;
@@ -383,7 +414,7 @@ img {
 }
 
 .my-default-page .user-info-box .user-coupon-box .coupon-status[data-v-544d2a9d] {
-    font-family: "Musinsa","Spoqa Han Sans Neo","-apple-system","BlinkMacSystemFont","Apple SD Gothic Neo","Apple SD 산돌고딕 Neo","helvetica","Roboto","Noto Sans KR","맑은 고딕","sans-serif";
+    font-family: "Spoqa Han Sans Neo","-apple-system","BlinkMacSystemFont","Apple SD Gothic Neo","Apple SD 산돌고딕 Neo","helvetica","Roboto","Noto Sans KR","맑은 고딕","sans-serif";
     font-size: 35px;
     font-weight: 700;
     padding-right: 9px;
@@ -683,10 +714,6 @@ li {
 .list-wrap[data-v-42a0b80a] .current-title-box h3 {
     font-size: 26px;
     font-weight: 100px;
-}
-
-.musinsa-font {
-    font-family: Musinsa;
 }
 
 col {
@@ -1075,36 +1102,6 @@ table {
     --ProductBG_Blue: #f0f3f7
 }
 
-@font-face {
-    font-family: "Musinsa";
-    font-weight: 500;
-    font-style: normal;
-    src: url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Medium.eot);
-    src: local("☺"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Medium.eot#iefix) format("embedded-opentype"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Medium.woff2) format("woff2"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Medium.woff) format("woff"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Medium.ttf) format("truetype"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Medium.svg#MusinsaLight) format("svg")
-}
-
-@font-face {
-    font-family: "Musinsa";
-    font-weight: 300;
-    font-style: normal;
-    src: url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Light.eot);
-    src: local("☺"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Light.eot#iefix) format("embedded-opentype"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Light.woff2) format("woff2"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Light.woff) format("woff"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Light.ttf) format("truetype"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Light.svg#MusinsaLight) format("svg")
-}
-
-@font-face {
-    font-family: "Musinsa";
-    font-weight: 700;
-    font-style: normal;
-    src: url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Bold.eot);
-    src: local("☺"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Bold.eot#iefix) format("embedded-opentype"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Bold.woff2) format("woff2"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Bold.woff) format("woff"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Bold.ttf) format("truetype"), url(https://static.msscdn.net/ui/assets/fonts/musinsaot-Bold.svg#musinsa-Bold) format("svg")
-}
-
-@font-face {
-    font-family: "password";
-    font-weight: 400;
-    font-style: normal;
-    src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAATsAA8AAAAAB2QAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABWAAAABwAAAAcg9+z70dERUYAAAF0AAAAHAAAAB4AJwANT1MvMgAAAZAAAAA/AAAAYH7AkBhjbWFwAAAB0AAAAFkAAAFqZowMx2N2dCAAAAIsAAAABAAAAAQAIgKIZ2FzcAAAAjAAAAAIAAAACAAAABBnbHlmAAACOAAAALkAAAE0MwNYJ2hlYWQAAAL0AAAAMAAAADYPA2KgaGhlYQAAAyQAAAAeAAAAJAU+ATJobXR4AAADRAAAABwAAAAcCPoA6mxvY2EAAANgAAAAEAAAABAA5gFMbWF4cAAAA3AAAAAaAAAAIAAKAE9uYW1lAAADjAAAARYAAAIgB4hZ03Bvc3QAAASkAAAAPgAAAE5Ojr8ld2ViZgAABOQAAAAGAAAABuK7WtIAAAABAAAAANXulPUAAAAA1viLwQAAAADW+JM4eNpjYGRgYOABYjEgZmJgBEI2IGYB8xgAA+AANXjaY2BifMg4gYGVgYVBAwOeYEAFjMgcp8yiFAYHBl7VP8wx/94wpDDHMIoo2DP8B8kx2TLHACkFBkYA8/IL3QB42mNgYGBmgGAZBkYGEEgB8hjBfBYGDyDNx8DBwMTABmTxMigoKKmeV/3z/z9YJTKf8f/X/4/vP7pldosLag4SYATqhgkyMgEJJnQFECcMOGChndEAfOwRuAAAAAAiAogAAQAB//8AD3jaY2BiUGJgYDRiWsXAzMDOoLeRkUHfZhM7C8Nbo41srHdsNjEzAZkMG5lBwqwg4U3sbIx/bDYxgsSNBRUF1Y0FlZUYBd6dOcO06m+YElMa0DiGJIZUxjuM9xjkGRhU2djZlJXU1UDQ1MTcDASNjcTFQFBUBGjYEkkVMJCU4gcCKRTeHCk+fn4+KSllsJiUJEhMUgrMUQbZk8bgz/iA8SRR9qzAY087FjEYD2QPDDAzMFgyAwC39TCRAAAAeNpjYGRgYADid/fqneL5bb4yyLMwgMC1H90HIfRkCxDN+IBpFZDiYGAC8QBbSwuceNpjYGRgYI7594aBgcmOAQgYHzAwMqACdgBbWQN0AAABdgAiAAAAAAAAAAABFAAAAj4AYgI+AGYB9AAAAAAAKgAqACoAKgBeAJIAmnjaY2BkYGBgZ1BgYGIAAUYGBNADEQAFQQBaAAB42o2PwUrDQBCGvzVV9GAQDx485exBY1CU3PQgVgIFI9prlVqDwcZNC/oSPoKP4HNUfQLfxYN/NytCe5GwO9/88+/MBAh5I8C0VoAtnYYNa8oaXpAn9RxIP/XcIqLreZENnjwvyfPieVVdXj2H7DHxPJH/2/M7sVn3/MGyOfb8SWjOGv4K2DRdctpkmtqhos+D6ISh4kiUUXDj1Fr3Bc/Oc0vPqec6A8aUyu1cdTaPZvyXyqz6Fm5axC7bxHOv/r/dnbSRXCk7+mpVrOqVtFqdp3NKxaHUgeod9cm40rtrzfrt2OyQa8fppCO9tk7d1x0rpiQcuDuRkjjtkHt16ctbuf/radZY52/PnEcphXpZOcofiEZNcQAAeNpjYGIAg///GBgZsAF2BgZGJkZmBmaGdkYWRla29JzKggxD9tK8TAMDAxc2D0MLU2NjENfI1M0ZACUXCrsAAAABWtLiugAA) format("woff")
-}
 
 .empty[data-v-1a0cece6] {
     flex-direction: column
@@ -1589,10 +1586,6 @@ body, button, input, select, table, textarea {
 svg:not(:root) {
     overflow-clip-margin: content-box;
     overflow: hidden;
-}
-
-:not(svg) {
-    transform-origin: 0px 0px;
 }
 
 date-input-polyfill {
