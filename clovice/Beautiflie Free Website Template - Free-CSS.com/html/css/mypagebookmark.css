@@ -2713,6 +2713,10 @@ body {
 .my-page-snb h2[data-v-42a0b80a] {
     font-size: 39px;
     line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #232322;
+    font-weight: bold;
 }
 
 h2[data-v-6648a721] {
