@@ -215,7 +215,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
-    /* font-family: "Spoqa Han Sans Neo","-apple-system","BlinkMacSystemFont","Apple SD Gothic Neo","Apple SD 산돌고딕 Neo","helvetica","Roboto","Noto Sans KR","맑은 고딕","sans-serif"; */
+    font-family: inherit;
     line-height: 1;
 }
 
@@ -241,65 +241,48 @@ body, html {
     -webkit-font-smoothing: antialiased;
     overscroll-behavior: none;
     overflow-anchor: none;
-
 }
 
-body {
+/* body {
     min-width: 100vw;
     width: 100vw;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
 
 
 
 
 :root {
-    --S_Yellow: #ffe200;
-    --S_Red: #f02e34;
-    --WeekRed: #ff6b6b;
-    --S_Green: #2fc656;
-    --S_Blue: #0083ff;
-    --WeekBlue: #4ca2f3;
-    --S_Purple: #5a2acf;
-    --White: #fff;
-    --Black: #000;
-    --D_Blue: #0065c5;
-    --D_Red: #af1212;
-    --Gray90: #000;
-    --Gray80: #333;
-    --Gray70: #666;
-    --Gray60: #999;
-    --Gray50: #aaa;
-    --Gray40: #ccc;
-    --Gray30: #ddd;
-    --Gray25: #eee;
-    --Gray20: #f5f5f5;
-    --Gray10: #f9f9f9;
-    --Gray00: #fff;
-    --Gray90_OP_8: rgba(0,0,0,0.8);
-    --Gray90_OP_5: rgba(0,0,0,0.5);
-    --Gray90_OP_3: rgba(0,0,0,0.3);
-    --Gray90_OP_1: rgba(0,0,0,0.1);
-    --Gray90_OP_04: rgba(0,0,0,0.04);
-    --Gray80_OP_8: rgba(51,51,51,0.8);
-    --Gray60_OP_3: hsla(0,0%,60%,0.3);
-    --Gray30_OP_6: hsla(0,0%,86.7%,0.6);
-    --Gray00_OP_6: hsla(0,0%,100%,0.6);
-    --Gray00_OP_85: hsla(0,0%,100%,0.85);
-    --Gray40_OP_15: hsla(0,0%,80%,0.15);
-    --S_Purple_OP_5: rgba(90,42,207,0.5);
-    --S_Purple_OP_3: rgba(90,42,207,0.3);
-    --S_Purple_OP_1: rgba(90,42,207,0.1);
-    --S_Purple_OP_12: rgba(90,42,207,0.12);
-    --S_Purple_OP_07: rgba(90,42,207,0.07);
-    --S_Blue_OP_3: rgba(0,131,255,0.3);
-    --S_Red_OP_3: rgba(240,46,52,0.3);
-    --BG_Purple: #f3f2f9;
-    --BG_Blue: #eef6ff;
-    --BG_Red: #fff6f6;
-    --ProductBG_Blue: #f0f3f7;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
 
@@ -317,6 +300,10 @@ body {
 .my-page-snb h2[data-v-42a0b80a] {
     font-size: 39px;
     line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #232322;
+    font-weight: bold;
 }
 
 h2[data-v-6648a721] {
@@ -1583,12 +1570,7 @@ address, em {
     background-image: linear-gradient(180deg,#fff 53px,hsla(0,0%,100%,0) 153px);
 }
 
-body, button, input, select, table, textarea {
-    font-size: 14px;
-    line-height: normal;
-    font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;
-    letter-spacing: -.5px;
-}
+
 
 .Coupon_coupon__MoIOY .Coupon_button-delete__LiLna svg {
     vertical-align: top;
@@ -3257,9 +3239,14 @@ body,button,input,select,table,textarea {
 }
 
 body {
-    position: relative;
-    -webkit-text-size-adjust: none;
-    background-color: #fff
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 
 fieldset,img {
@@ -3289,13 +3276,6 @@ mark {
     height: 1px;
     margin: -1px;
     overflow: hidden
-}
-
-:root {
-    --green-color: #03c75a;
-    --green-dark-color: #09b65a;
-    --bank-color: #009ac7;
-    --blue-color: #007cd9
 }
 
 .App {
@@ -3882,11 +3862,7 @@ body,button,input,select,table,textarea {
     letter-spacing: -.5px
 }
 
-body {
-    position: relative;
-    -webkit-text-size-adjust: none;
-    background-color: #fff
-}
+
 
 fieldset,img {
     border: 0
@@ -3915,13 +3891,6 @@ mark {
     height: 1px;
     margin: -1px;
     overflow: hidden
-}
-
-:root {
-    --green-color: #03c75a;
-    --green-dark-color: #09b65a;
-    --bank-color: #009ac7;
-    --blue-color: #007cd9
 }
 
 .App {
@@ -4524,3 +4493,10 @@ body::-webkit-scrollbar-thumb {
     border: 4px solid transparent;
     background-clip: padding-box
 }
+
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
+}
+
