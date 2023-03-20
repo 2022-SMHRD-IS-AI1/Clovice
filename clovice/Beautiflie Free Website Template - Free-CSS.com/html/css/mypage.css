@@ -28,6 +28,47 @@
 @import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    
+
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul>li {
+    margin-right: 40px;
+}
+
 /* header section start */
 
 .header_section {
@@ -303,6 +344,7 @@ body {
 .my-page-snb h2[data-v-42a0b80a] {
     font-size: 39px;
     line-height: 30px;
+    color: #222222;
 }
 
 h2[data-v-6648a721] {
@@ -639,7 +681,7 @@ a {
     color: #222222;
     text-decoration: none;
     outline: none !important;
-}    
+}
 
 .codi img {
     transition: all 0.2s linear;
@@ -706,6 +748,7 @@ li {
 }
 
 .list-wrap[data-v-42a0b80a] .current-title-box h3 {
+    color: #222222;
     font-size: 26px;
     font-weight: 500;
 }
@@ -1208,7 +1251,7 @@ a:active, a:focus, a:hover, a:link, a:visited, button, input:focus, label {
 }
 
 .my-page-snb-list li.selected[data-v-42a0b80a] {
-    color: #000;
+    color: #222222;
     font-weight: 700;
 }
 
