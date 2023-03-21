@@ -1371,9 +1371,9 @@ button {
 /* effect */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2.5s;
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
