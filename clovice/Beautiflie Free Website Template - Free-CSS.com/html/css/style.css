@@ -201,11 +201,13 @@ li {
 }
 
 .row {
-    opacity: 1;
-    transition: all .5s ease;
+    opacity: 1; 
+    transition: all .1s ease;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
     /* display: flex; */
 }
 
@@ -528,7 +530,8 @@ a,
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    background-size: cover;
 }
 
 :focus {
@@ -586,7 +589,7 @@ button {
 }
 
 .layout_padding {
-    padding-top: 90px;
+    padding-top: 62px;
     padding-bottom: 0px;
 }
 
@@ -700,23 +703,22 @@ button {
 
 /* banner section start */
 
-.banner_section {
+.banner_section layout_padding {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
     height: 590px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-.banner_taital {
+/* .banner_taital {
     width: 100%;
     margin: 0 auto;
     font-size: 100px;
     color: #000;
     line-height: 90px;
     padding-top: 20px;
-}
+} */
 
 .banner_text {
     width: 100%;
@@ -1360,3 +1362,125 @@ button {
     height: 40px;
     border: 0px;
 }
+
+
+
+/* ============================index banner 수정=============================== */
+
+
+/* effect */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 27%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mySlideDiv fade active  {
+    width: 100%;
+    height: auto;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* margin-left: 50%; */
+   
+}
+
+#banner1 {
+    width: auto;
+    height: 490px;
+    display: block;
+    margin: 0px auto;
+}
+
+#banner2 {
+    width: auto;
+    height: 490px;
+    display: block;
+    margin: 0px auto;
+}
+
+#banner3 {
+    width: auto;
+    height: 490px;
+    display: block;
+    margin: 0px auto;
+}
+
+#banner4 {
+    width: auto;
+    height: 490px;
+    display: block;
+    margin: 0px auto;
+}
+
+.bn-container {
+    background-color: #e7e6eb;
+    background: size width 100%;
+    background: size height 100%;
+}
+
+.bn-container2 {
+    background-color: #f2ede1;
+    background: size width 100%;
+    background: size height 100%;
+}
+
+.bn-container3 {
+    background-color: #e8b691;
+    background: size width 100%;
+    background: size height 100%;
+}
+
+.bn-container4 {
+    background-color: #f2ede3;
+    background: size width 100%;
+    background: size height 100%;
+} 
